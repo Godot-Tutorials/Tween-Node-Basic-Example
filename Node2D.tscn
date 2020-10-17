@@ -1,0 +1,20 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://icon.png" type="Texture" id=1]
+[ext_resource path="res://tweenScript.gd" type="Script" id=2]
+[ext_resource path="res://iconScript.gd" type="Script" id=3]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="icon" type="Sprite" parent="."]
+position = Vector2( 117.049, 119.368 )
+texture = ExtResource( 1 )
+script = ExtResource( 3 )
+
+[node name="icon2" type="Sprite" parent="."]
+modulate = Color( 0.0784314, 0.686275, 0.160784, 1 )
+position = Vector2( 119.011, 419.78 )
+texture = ExtResource( 1 )
+script = ExtResource( 2 )
+
+[node name="Tween" type="Tween" parent="icon2"]
